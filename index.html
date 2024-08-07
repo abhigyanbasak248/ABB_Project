@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Bidding</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Online Bidding</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#bids">Bids</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="get-started" onclick="location.href='get-started.html'">Get Started</button>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-gray-800 p-4">
+      <nav class="container mx-auto flex justify-between items-center">
+        <div class="text-white text-lg">Online Bidding</div>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="text-white">Home</a></li>
+          <li><a href="#about" class="text-white">About</a></li>
+          <li><a href="#bids" class="text-white">Bids</a></li>
+          <li><a href="#contact" class="text-white">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        class="get-started bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded"
+        onclick="location.href='get-started.html'"
+      >
+        Get Started
+      </button>
     </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to Online Bidding</h1>
-            <p>Bid on a variety of items easily and securely.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We provide a platform for easy and secure online bidding.</p>
-        </section>
-        <section id="bids">
-            <h2>Current Bids</h2>
-            <div class="bid-item">
-                <h3>Item 1</h3>
-                <p>Current Bid: $100</p>
-                <button>Bid Now</button>
-            </div>
-            <!-- More bid items here -->
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+    <main class="container mx-auto mt-4">
+      <section id="home" class="py-4">
+        <h1 class="text-3xl font-bold">Welcome to Online Bidding</h1>
+        <p class="mt-2">Bid on a variety of items easily and securely.</p>
+      </section>
+      <section id="about" class="py-4">
+        <h2 class="text-2xl font-semibold">About Us</h2>
+        <p class="mt-2">
+          We provide a platform for easy and secure online bidding.
+        </p>
+      </section>
+      <section id="bids" class="py-4">
+        <h2 class="text-2xl font-semibold">Current Bids</h2>
+        <div class="bid-item border p-4 mt-2">
+          <h3 class="text-xl">Item 1</h3>
+          <p>Current Bid: $100</p>
+          <button class="bg-blue-500 text-white py-1 px-2 rounded">
+            Bid Now
+          </button>
+        </div>
+      </section>
+      <section id="contact" class="py-4">
+        <h2 class="text-2xl font-semibold">Contact Us</h2>
+        <form id="contact-form" class="mt-2">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            class="border p-2 w-full mb-2"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            class="border p-2 w-full mb-2"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            class="border p-2 w-full mb-2"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white py-2 px-4 rounded"
+          >
+            Send
+          </button>
+        </form>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Online Bidding. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-4">
+      <p>&copy; 2024 Online Bidding. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
