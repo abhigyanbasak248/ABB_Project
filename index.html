@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bidding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Online Bidding</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#bids">Bids</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="get-started" onclick="location.href='get-started.html'">Get Started</button>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Online Bidding</h1>
+            <p>Bid on a variety of items easily and securely.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide a platform for easy and secure online bidding.</p>
+        </section>
+        <section id="bids">
+            <h2>Current Bids</h2>
+            <div class="bid-item">
+                <h3>Item 1</h3>
+                <p>Current Bid: $100</p>
+                <button>Bid Now</button>
+            </div>
+            <!-- More bid items here -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Bidding. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
